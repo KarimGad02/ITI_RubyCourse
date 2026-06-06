@@ -1,0 +1,16 @@
+2026-06-06T13:31:48+03:00 -- info -- Processing Transactions User Ali transaction with value -20, User Ali transaction with value -30, User Ali transaction with value -50, User Ali transaction with value -100, User Ali transaction with value -100, User Menna transaction with value -100...
+2026-06-06T13:31:48+03:00 -- info -- User Ali transaction with value -20 succeeded
+2026-06-06T13:31:48+03:00 -- info -- User Ali transaction with value -30 succeeded
+2026-06-06T13:31:48+03:00 -- info -- User Ali transaction with value -50 succeeded
+2026-06-06T13:31:48+03:00 -- info -- User Ali transaction with value -100 succeeded
+2026-06-06T13:31:48+03:00 -- warning -- Ali has 0 balance
+2026-06-06T13:31:48+03:00 -- error -- User Ali transaction with value -100 failed with message Not enough balance
+2026-06-06T13:31:48+03:00 -- error -- User Menna transaction with value -100 failed with message Menna not exist in the bank!!
+2026-06-06T16:51:41+03:00 -- info -- Processing Transactions User Karim transaction with value -20, User Karim transaction with value -30, User Karim transaction with value -50, User Karim transaction with value -100, User Karim transaction with value -100, User Menna transaction with value -100...
+2026-06-06T16:51:41+03:00 -- info -- User Karim transaction with value -20 succeeded
+2026-06-06T16:51:41+03:00 -- info -- User Karim transaction with value -30 succeeded
+2026-06-06T16:51:41+03:00 -- info -- User Karim transaction with value -50 succeeded
+2026-06-06T16:51:41+03:00 -- info -- User Karim transaction with value -100 succeeded
+2026-06-06T16:51:41+03:00 -- warning -- Karim has 0 balance
+2026-06-06T16:51:41+03:00 -- error -- User Karim transaction with value -100 failed with message Not enough balance
+2026-06-06T16:51:41+03:00 -- error -- User Menna transaction with value -100 failed with message Menna not exist in the bank!!
