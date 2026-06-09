@@ -1,0 +1,18 @@
+<p class="notice"><%= notice %></p>
+
+<%= render @article %>
+
+<div class="actions">
+  <%= link_to "Edit", edit_article_path(@article) %> |
+  <%= link_to "All Articles", articles_path %>
+  <%= button_to "Delete", @article, method: :delete %>
+</div>
+
+<% if @article.image.attached? %>
+  <%= image_tag @article.image, style: "max-width: 300px;" %>
+<% end %>
+
+<%# Logged-in users (not the owner) may flag an article %>
+<% if user_signed_in? && @article.user != current_user %>
+  <%= button_to "Flag", report_article_path(@article), method: :post %>
+<% end %>

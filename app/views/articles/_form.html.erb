@@ -1,0 +1,61 @@
+<%= form_with(model: article) do |form| %>
+  <% if article.errors.any? %>
+    <div class="errors">
+      <h3><%= pluralize(article.errors.count, "error") %> prevented saving:</h3>
+      <ul>
+        <% article.errors.each do |err| %>
+          <li><%= err.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, "Headline" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :body, "Content" %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.label :user_id, "Author ID" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :is_public, "Visible" %>
+    <%= form.check_box :is_public %>
+  </div>
+
+  <div>
+    <%= form.label :reports_count, "Flags" %>
+    <%= form.number_field :reports_count %>
+  </div>
+
+  <div>
+    <%= form.label :default, "Meta" %>
+    <%= form.text_field :default %>
+  </div>
+
+  <div>
+    <%= form.label :"0", "Misc" %>
+    <%= form.text_field :"0" %>
+  </div>
+
+  <div>
+    <%= form.label :status, "State" %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div>
+    <%= form.label :image, "Upload image" %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div>
+    <%= form.submit "Save Article" %>
+  </div>
+<% end %>

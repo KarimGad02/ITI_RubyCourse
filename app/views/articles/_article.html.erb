@@ -1,0 +1,42 @@
+<div id="<%= dom_id article %>">
+  <div>
+    <strong>Headline:</strong>
+    <%= article.title %>
+  </div>
+
+  <div>
+    <strong>Author:</strong>
+    <%= article.user_id %>
+  </div>
+
+  <div>
+    <strong>Content:</strong>
+    <%= article.body %>
+  </div>
+
+  <div>
+    <strong>Flags:</strong>
+    <%= article.reports_count %>
+  </div>
+
+  <div>
+    <strong>Visible:</strong>
+    <%= article.is_public %>
+  </div>
+
+  <div>
+    <strong>Meta:</strong>
+    <%= article["default"] %>
+  </div>
+
+  <div>
+    <strong>Misc:</strong>
+    <%= article["0"] %>
+  </div>
+
+  <div>
+    <strong>State:</strong>
+    <%= article.status %>
+  </div>
+
+</div>

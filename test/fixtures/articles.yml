@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyText
+  user: one
+  is_public: false
+  reports_count: 1
+  default: MyString
+  0: MyString
+  status: MyString
+
+two:
+  title: MyString
+  body: MyText
+  user: two
+  is_public: false
+  reports_count: 1
+  default: MyString
+  0: MyString
+  status: MyString
